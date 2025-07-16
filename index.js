@@ -13,8 +13,8 @@ app.get('/',function(req,res){
 });
 
 app.get("/profile/:username/:age",function(req,res){
-    res.send(`welcome , ${req.params.username}`);
-    res.send(`your age is ${req.params.age}`);
+    res.send(`welcome , ${req.params.username} with age ${req.params.age}`);
+    
 });
 
 
