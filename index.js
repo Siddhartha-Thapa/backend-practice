@@ -31,5 +31,10 @@ app.get('/file/:filename', function(req, res){
 
 app.get('/edit/:filename', function(req,res){
     res.render('edit',{filename: req.params.filename});
+});
+
+
+app.post('/edit', function(req,res){
+    console.log(req.body);
 })
 app.listen(3000);
