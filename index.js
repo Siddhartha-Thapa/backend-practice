@@ -28,4 +28,8 @@ app.get('/file/:filename', function(req, res){
     } )
     
 })
+
+app.get('/edit/:filename', function(req,res){
+    res.render('edit',{filename: req.params.filename});
+})
 app.listen(3000);
